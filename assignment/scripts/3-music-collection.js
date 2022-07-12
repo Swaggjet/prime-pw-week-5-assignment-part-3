@@ -19,7 +19,7 @@ addToCollection('Kids', 'Kids', '2000');
 addToCollection('Drake', 'Miss me', '2016');
 addToCollection('Time & Space', 'Kid Cudi', 2020)
 addToCollection('Theory of Everything', 'Everything', '2001')
-addToCollection(Black eye peas, 'Eminem', '2002')
+addToCollection('Black eye peas', 'Eminem', '2002')
 console.log(collection);
 
 function showCollection(array){
