@@ -1,50 +1,15 @@
 console.log('***** Music Collection *****')
+let collection = []; //create a varible to allow collection be an open array
+function addToCollection(titles, artist, yearPublished){ //Set up a function and set the paramenters for the album
 
-let collection = [];
-
-function addToCollection(title, artist, yearPublished, tracks) {
-  let awesomeAlbum = {
-    title: title,
+//set up a object 'album' with the needed parameters needed within the object.
+  let album = {
+    titles: titles,
     artist: artist,
-    yearPublished: yearPublished,
-    tracks: tracks
+    yearPublished: yearPublished
   }
-  collection.push(awesomeAlbum);
-  return awesomeAlbum;
+  //
+  collection.push(album);
+return console.log('now added to the collection',  album.artist);
 }
 
-console.log('Adding album to collection:', addToCollection(
-  'Cool people'
-  , 'Mac Miller'
-  , '2015',
-  [ 
-    {
-      name: 'Intro',
-      length: '3:00'
-    },
-    {
-      name: 'I\'m a cool person',
-      length: '3:00'
-    },
-  ]
-)
-
-console.log('Adding album to collection:', addToCollection(
-  'Indigo'
-  , 'Chris Brown'
-  , '2019',
-  [ 
-    {
-      name: 'Burgendy',
-      length: '3:20'
-    },
-    {
-      name: 'Il',
-      length: '3:00'
-    },
-  ]
-
-
-
-)
-)
